@@ -18,7 +18,7 @@
 		"next": "15.0.2",
 		"punycode": "^2.3.1",
 		"react": "^19",
-		"react-dom": "19.0.0-rc-69d4b800-20241021",
+		"react-dom": "^19",
 		"react-hook-form": "^7.55.0",
 		"uuid": "^11.1.0"
 	},

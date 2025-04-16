@@ -1,6 +1,5 @@
-import { BEVERAGE_RECIPES } from "@/lib/urls.constants";
-
-import { BeverageResponse } from "@/lib/types/response.types";
+import { BEVERAGE_RECIPES } from "../../lib/urls.constants";
+import { BeverageResponse } from "../../lib/types/response.types";
 
 const transformDrinkData = async (data: any): Promise<BeverageResponse> => {
 	const drink = await data.drinks[0];

@@ -1,14 +1,15 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from "react";
-import { BeverageResponse } from "@/lib/types/response.types";
+import React, { createContext, useContext, useState, ReactNode } from "react";
+
+import { BeverageResponse } from "../lib/types/response.types";
 
 type BeverageContextType = {
 	beverageData: BeverageResponse | null;
 	setBeverageData: (order: BeverageResponse) => void;
 };
 
-const BeverageContext = createContext<BeverageContextType | undefined>(
+export const BeverageContext = createContext<BeverageContextType | undefined>(
 	undefined
 );
 
