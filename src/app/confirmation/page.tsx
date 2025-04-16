@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 
-import { useOrder } from "@/context/OrderContext";
-import { useBeverage } from "@/context/BeverageContext";
+import { useOrder } from "../../context/OrderContext";
+import { useBeverage } from "../../context/BeverageContext";
 
 export default function ConfirmationPage() {
 	const router = useRouter();

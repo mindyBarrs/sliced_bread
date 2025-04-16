@@ -4,9 +4,9 @@ import React, { useEffect } from "react";
 
 import ImageContainer from "../ImageContainer/ImageContainer";
 
-import { BeverageContainerProps } from "@/lib/types/components.types";
+import { BeverageContainerProps } from "../../lib/types/components.types";
 
-import { useBeverage } from "@/context/BeverageContext";
+import { useBeverage } from "../../context/BeverageContext";
 
 const BeverageContainer: React.FC<BeverageContainerProps> = ({
 	beverageData,

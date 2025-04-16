@@ -1,14 +1,17 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from "react";
-import { OrderTypes } from "@/lib/types/components.types";
+import React, { createContext, useContext, useState, ReactNode } from "react";
+
+import { OrderTypes } from "../lib/types/components.types";
 
 type OrderContextType = {
 	order: OrderTypes | null;
 	setOrder: (order: OrderTypes) => void;
 };
 
-const OrderContext = createContext<OrderContextType | undefined>(undefined);
+export const OrderContext = createContext<OrderContextType | undefined>(
+	undefined
+);
 
 export const OrderProvider = ({ children }: { children: ReactNode }) => {
 	const [order, setOrder] = useState<OrderTypes | null>(null);

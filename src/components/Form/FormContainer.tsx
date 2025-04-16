@@ -5,9 +5,9 @@ import { useForm, Controller } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
 
-import { useOrder } from "@/context/OrderContext";
+import { useOrder } from "../../context/OrderContext";
 
-import { OrderTypes } from "@/lib/types/components.types";
+import { OrderTypes } from "../../lib/types/components.types";
 
 const MAX_QUANTITY = 12;
 const MAX_NUM = 1000;

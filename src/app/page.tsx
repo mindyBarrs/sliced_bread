@@ -1,10 +1,14 @@
-import FormContainer from "@/components/Form/FormContainer";
-import BeverageContainer from "@/components/BeverageContainer/BeverageContainer";
+import React from "react";
+
+import FormContainer from "../components/Form/FormContainer";
+import BeverageContainer from "../components/BeverageContainer/BeverageContainer";
 
 import { getBeverage } from "./api/getBeverage";
 
 export default async function Home() {
 	const beverageData = await getBeverage();
+
+	console.log(beverageData);
 
 	return (
 		<div
